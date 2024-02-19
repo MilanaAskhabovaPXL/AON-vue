@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Pulp Fiction (1994)",
+      "posterimg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlOlZEF-SzA9oTw8KzHgar71AumckSK2D0l_J5tKj0fVXsi9V_XpoXX8YHfT3"
+    },
+    {
+      "id": 2,
+      "title": "Inglourious Basterds (2009)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Inglourious_Basterds_Poster.jpg/220px-Inglourious_Basterds_Poster.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Django Unchained (2012)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Django_Unchained_Poster.jpg/220px-Django_Unchained_Poster.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Reservoir Dogs (1992)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Reservoir_Dogs_poster.jpg/220px-Reservoir_Dogs_poster.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Kill Bill: Vol. 1 (2003)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Kill_Bill_Vol._1_Poster.jpg/220px-Kill_Bill_Vol._1_Poster.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Kill Bill: Vol. 2 (2004)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Kill_Bill_Vol._2_Poster.jpg/220px-Kill_Bill_Vol._2_Poster.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Once Upon a Time in Hollywood (2019)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Once_Upon_a_Time_in_Hollywood_poster.jpg/220px-Once_Upon_a_Time_in_Hollywood_poster.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Jackie Brown (1997)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Jackie_Brown_poster.jpg/220px-Jackie_Brown_poster.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Hateful Eight (2015)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/The_Hateful_Eight_Poster.jpg/220px-The_Hateful_Eight_Poster.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Death Proof (2007)",
+      "posterimg": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Death_Proof_poster.jpg/220px-Death_Proof_poster.jpg"
+    }
+  ]
