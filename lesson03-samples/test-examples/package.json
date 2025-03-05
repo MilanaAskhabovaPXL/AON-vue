@@ -1,5 +1,5 @@
 {
-  "name": "test-examples",
+  "name": "test-samples",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,19 +8,23 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
+    "prepare": "cypress install",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'"
   },
   "dependencies": {
-    "vue": "^3.4.15"
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.3",
-    "@vue/test-utils": "^2.4.4",
-    "cypress": "^13.6.3",
-    "jsdom": "^24.0.0",
-    "start-server-and-test": "^2.0.3",
-    "vite": "^5.0.11",
-    "vitest": "^1.2.2"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "cypress": "^14.0.3",
+    "jsdom": "^26.0.0",
+    "start-server-and-test": "^2.0.10",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vitest": "^3.0.5"
   }
 }

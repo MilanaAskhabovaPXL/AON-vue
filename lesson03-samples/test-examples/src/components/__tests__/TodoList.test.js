@@ -3,7 +3,7 @@ import { test, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import TodoList from '../TodoList.vue'
 
-/*
+
 test('renders a todo', () => {
   const wrapper = mount(TodoList)
 
@@ -11,15 +11,15 @@ test('renders a todo', () => {
 
   expect(todo.text()).toBe('Learn Vue 3')
 })
-*/
+
 
 /*
-test('creates a todo', () => {
+test('creates a todo', async () => {
   const wrapper = mount(TodoList)
   expect(wrapper.findAll('[data-test="todo"]')).toHaveLength(1)
 
-  wrapper.get('[data-test="new-todo"]').setValue('New todo')
-  wrapper.get('[data-test="form"]').trigger('submit')
+  await wrapper.get('[data-test="new-todo"]').setValue('New todo')
+  await wrapper.get('[data-test="form"]').trigger('submit')
 
   expect(wrapper.findAll('[data-test="todo"]')).toHaveLength(2)
 })
@@ -35,14 +35,14 @@ test('completes a todo', async () => {
 })
 */
 
-
-test('Shows a title', () => {
+/*
+test('Shows a title when showTitle prop is true', () => {
   const wrapper = mount(TodoList, {props: {
-    showTitle: false
+    showTitle: true
   }});
 
   // By using `get()` we are implicitly asserting that
   // the element exists.
   expect(wrapper.get('#title').text()).toEqual('Todos')
 })
-
+*/
