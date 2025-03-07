@@ -7,6 +7,7 @@
             </div>
             <div class="p-8">
                 <h2 class="text-2xl font-bold text-gray-900">{{ pokemon.name.toUpperCase() }}</h2>
+                <p v-if="isPokemonFavorite" class="mt-4 text-black-600">This Pokémon is added to favorites!</p>
                 <p class="mt-2 text-gray-600">Height: {{ pokemon.height }}</p>
                 <p class="mt-2 text-gray-600">Weight: {{ pokemon.weight }}</p>
                 <h3 class="mt-4 text-lg font-semibold">Types:</h3>
@@ -25,32 +26,39 @@
                 <ul class="list-disc list-inside">
                     <li v-for="move in pokemon.moves" :key="move.move.name" class="text-gray-600">{{ move.move.name }}</li>
                 </ul>
+                
             </div>
         </div>
     </div>
 </main>
-
 </template>
 
-
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import axios from 'axios';
 import { useRoute } from 'vue-router';
+import { usePokemonStore } from '@/stores/pokemons';
 
 const route = useRoute();
 const id = route.params.id;
 const pokemon = ref(null);
-axios({
-    method: 'get',
-    url: `https://pokeapi.co/api/v2/pokemon/${id}`
-}).then((response) => {
-    pokemon.value = response.data;
-});
-// Todo: fetch pokemon details via axios and show in UI!
+const pokemonStore = usePokemonStore();
 
+const isPokemonFavorite = computed(() => {
+  return pokemonStore.isFavorite(pokemon.value);
+});
+
+async function fetchData() {
+    try {
+        let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        pokemon.value = response.data;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+fetchData();
 </script>
 
 <style scoped>
-
 </style>
